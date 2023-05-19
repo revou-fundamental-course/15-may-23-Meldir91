@@ -1,0 +1,40 @@
+body {
+    background-color: rgba(128, 128, 128, 0.454);
+}
+.example-square {
+    border: 1px red solid;
+    height: 20px;
+    width: 20px;
+}
+header {
+    background-color: rgba(135, 175, 255, 0.648);
+    text-align: center;
+    padding: 20px 20px;
+    margin: 0;
+}
+span.title {
+    font-weight: bold;
+    color: white;
+}
+span.subtitle {
+    color: gray;
+    font-size: small;
+}
+.card {
+    background: white;
+}
+.figure {
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.result-luas {
+    visibility: hidden;
+    /* display: none; */
+}
