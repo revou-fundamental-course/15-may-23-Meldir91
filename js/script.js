@@ -22,32 +22,43 @@ function hitungLuas() {
     document.getElementById("output-luas").innerHTML = '<span>'+sisiLuas+'</span>';
     console.log(sisiLuas);
 
-    // Menampilkan hasil input niai pertama
-    var elemen = document.getElementById("hasilAll");
-    elemen.style.display = "block";    
-    var elemen2 = document.getElementById("sisi-luas");
-    elemen2.style.display = "none";
-    var elemen3 = document.getElementById("sisi-luas2");
-    elemen3.style.display = "block";
-    var elemen4 = document.getElementById("btn-hitung");
-    elemen4.style.display = "none";
-    var elemen5 = document.getElementById("btn-hitung2");
-    elemen5.style.display = "block";
-    var elemen6 = document.getElementById("btn-reset");
-    elemen6.style.display = "block";
+    document.getElementById("output-luas2").innerHTML = '<span>'+sisiLuas+'</span>';
+    console.log(sisiLuas);
 
+    let a1 = parseInt(sisiLuas);
+    let a2 = sisiLuas * sisiLuas;
+    
+    document.getElementById("result").innerHTML = '<span>'+a2+'</span>';
+    console.log(a2);
+
+
+    // Menampilkan hasil input niai persegi:
+    var elemen = document.getElementById("hasilAll");
+    elemen.style.display = "block";
+    var elemen1 = document.getElementById("btn-reset");
+    elemen1.style.display = "block";
+
+    // Menampilkan hasil input niai persegi panjang:
+    // var elemen2 = document.getElementById("sisi-luas");
+    // elemen2.style.display = "none";
+    // var elemen3 = document.getElementById("sisi-luas2");
+    // elemen3.style.display = "block";
+    // var elemen4 = document.getElementById("btn-hitung");
+    // elemen4.style.display = "none";
+    // var elemen5 = document.getElementById("btn-hitung2");
+    // elemen5.style.display = "block";
     return sisiLuas;
 }
 
  
-function hitungLuas2() {
-    var sisiLuas2 = document.getElementById("sisi-luas2").value;
+// function hitungLuas2() {
+//     var sisiLuas2 = document.getElementById("sisi-luas2").value;
     
-    document.getElementById("result-akhir").innerHTML = '<span>'+sisiLuas2+'</span>';
-    console.log(sisiLuas2);    
+//     document.getElementById("result-akhir").innerHTML = '<span>'+sisiLuas2+'</span>';
+//     console.log(sisiLuas2);    
 
-    return sisiLuas2;
-}
+//     return sisiLuas2;
+// }
 
 // function selesai() {
 //     var a1 = hitungLuas();
