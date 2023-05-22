@@ -29,8 +29,7 @@ body {
 header {
     background-color: white;
     padding: 0px 20px;
-    display: block;
-    
+    display: block;    
 }
 #introduction{
     text-align: center;
@@ -81,8 +80,8 @@ h3 {
 }
 .card {
     background-color: white;
-    padding: 0px 0px;
-    margin: 0px 0px;
+    padding: 0px;
+    margin: 0px;
     border-style: solid;
     border-width: 1px;
     border-color: rgba(48, 115, 250, 0.648);
@@ -92,7 +91,7 @@ h3 {
     color: white;
 }
 .figure {
-    display: flex;
+    display: grid;
     justify-content: center;
     padding-top: 20px;
 
@@ -111,17 +110,22 @@ h3 {
 } */
 .example-square {
     border: 1px red solid;
-    height: 70px;
-    width: 70px;
-    grid-column: 1/4; 
+    height: 75px;
+    width: 75px;;
     justify-content: center;
     align-items: center;
-}
-/* .abcd {
-    font-size: x-small;
+    margin-left: 65px;;
     display: grid;
-
 }
+.abcd {
+    font-size: x-small;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 67px;
+    padding-left: 65px;
+    display: grid;
+}
+/*
 #a {
     padding: 0px 0px 0px 100%;
     grid-column: 1/2;
@@ -143,7 +147,7 @@ h3 {
     text-align: left;
 } */
 .bujur {
-    font-size: small;
+    font-size: x-small;
     font-weight: bold;
     place-items: center;
     display: grid;
