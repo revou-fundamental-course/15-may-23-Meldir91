@@ -23,7 +23,7 @@ body {
 }
 .first {
     background-color: black;
-    padding top: 20px;
+    padding-top: 20px;
     margin: 20px;
 }
 header {
@@ -121,31 +121,10 @@ h3 {
     font-size: x-small;
     justify-content: center;
     align-items: center;
-    letter-spacing: 67px;
+    letter-spacing: 65px;
     padding-left: 65px;
     display: grid;
 }
-/*
-#a {
-    padding: 0px 0px 0px 100%;
-    grid-column: 1/2;
-    text-align: right;
-}
-#b {
-    padding: 0px 0px 0px 0px;
-    grid-column: 3/4;
-    text-align: left;
-}
-#c {
-    padding: 0px 0px 0px 100%;
-    grid-column: 1/2;
-    text-align: right;
-}
-#d {
-    padding: 0px 0px 0px 0px;
-    grid-column: 3/4;
-    text-align: left;
-} */
 .bujur {
     font-size: x-small;
     font-weight: bold;
@@ -166,7 +145,6 @@ input {
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
-    -moz-appearance: textfield;
 }
 #sisiluas {
     display: block;
@@ -183,7 +161,7 @@ input {
     color: white;
     font-weight: bold;
     padding: 5px;
-    width: 150px;
+    width: 75px;
     height: 35px;
     border-radius: 6px;
     border: 0px;
@@ -220,7 +198,7 @@ input {
     height: 30px;
     border-radius: 6px;
     border: 0px;
-    display: none;
+    display: block;
     float: right;
 }
 #show-rumus {

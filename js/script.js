@@ -16,7 +16,6 @@ function pilihPersegipanjang() {
 
 
 function hitungLuas() {
-
     var sisiLuas = document.getElementById("sisi-luas").value;
 
     document.getElementById("output-luas").innerHTML = '<span>'+sisiLuas+'</span>';
@@ -74,8 +73,6 @@ function hitungLuas() {
 //         selesai();
 //     });
 // });
-
-
 
 function resetLuas() {
     document.getElementById("sisi-luas").value = "";
