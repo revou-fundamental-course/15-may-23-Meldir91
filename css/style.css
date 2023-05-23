@@ -141,6 +141,7 @@ input {
     display: none;
 }
 #hasilAll {
+    background-color: rgb(154, 154, 154);
     display: none;
     justify-content: left;
 }
