@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Meldir">
+
+    <!-- judul untuk tab browser -->
+    <title>Katik - Kalkulator Matamatik</title>
+
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+<body>
+    <!-- bagian judul/ nama web app hanya muncul di awal start app -->
+    <span class="homepage" id="homepage">
+        <span id="title" >Katik</span> 
+        <span id="subtitle">Kalkulator Matematik</span>
+    </span>
+
+    <!-- bagian header di isi tulisan welcome dan tombol pilihan menu diset hanya akan muncul di awal start app -->
+    <header id="header">
+        <span class="first">
+            <h3>Welcome to Katik</h3>
+            <p id="introduction">
+                Hai sobat, selamat datang di Katik &#128578;<br>
+                Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.
+            </p>
+        </span>
+        <div class="btn-atas">
+
+            <!-- ini tombol untuk pilih menu menghitung persegi -->
+            <span>
+                <button id="btn-choose1" onclick="pilihPersegi()">Persegi</button>
+            </span>
+
+            <!-- ini tombol untuk pilih menu menghitung persegi panjang -->
+            <span>
+                <button id="btn-choose2" onclick="pilihPersegipanjang()">Persegi Panjang</button>
+            </span>
+
+        </div>
+    </header>
+
+    <!-- bagian main hanya muncul sesuai pilihan tombol di atas -->
+    <main id="main">
+        <div class="card">
+
+            <!-- hanya muncul di menu perhitungan persegi -->
+            <span class="title" id="luas-persegi">Luas Persegi</span>            
+            <div class="figure">
+                <span class="abcd">AB</span>
+                <span class="example-square">
+                </span>
+                <span class="abcd">CD</span> 
+            </div> 
+            <span class="bujur">Bujur Sangkar</span>        
+            <div class="operator" id="formula-description">
+                <p>
+                    Rumus Luas Persegi yaitu:<br>
+                    <p id="show-rumus"> L = S x S</p>
+
+                    Di mana:<br>
+                    L = Luas<br>
+                    S = Sisi
+                </p>
+            </div>
+            <hr>
+            <div class="operator">
+                <h3>Hitung Luas Persegi</h3>
+                <input id="sisi-luas" name="sisi-luas" type="text" placeholder="Nilai Sisi" required>
+                
+                <!-- proses pengembangan persegi panjang:
+                    <input id="sisi-luas2" name="sisi-luas2" type="text" placeholder="Nilai Panjang" required> 
+                    
+                    <input id="sisi-luas3" name="sisi-luas2" type="text" placeholder="Nilai Lebar" required> 
+                -->
+
+                <div id="hasilAll">
+                    <p class="result-luas" id="rumus-luas">
+                        <h4>H A S I L :</h4>
+                        L = S x S
+                    </p>
+                    <p class="result-luas" id="perhitungan-luas"></p>
+                    <p class="result-luas2">L = <span id="output-luas"></span> x <span id="output-luas2"></span></p>
+                    <p class="result-luas2"><span id="result-akhir"></span></p>
+                    <p class="result-luas">L = <span id="result"></span> m&sup2;</p>
+                </div>
+                <span class="btn-hitung">
+                    <button id="btn-hitung" name="hitung-luas" onclick="hitungLuas()">Hitung</button>
+                    <!-- <button id="btn-hitung2" name="hitung-luas2" onclick="hitungLuas2()">Hitung</button> -->
+                </span>
+                <span class="btn-reset">
+                    <button id="btn-home" name="home" onclick="homePage()">Home</button>
+                </span>
+                <span class="btn-reset">
+                    <button id="btn-reset" name="reset-luas" onclick="resetLuas()">Reset</button>
+                </span>
+            </div>
+            </span>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+        <script src="js/script.js"></script>
+</body>
+</html>
