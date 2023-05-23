@@ -94,35 +94,22 @@ h3 {
     display: grid;
     justify-content: center;
     padding-top: 20px;
-
-    /* grid-template-columns: auto auto auto; */
-    /* min-height: 200px; */
-    /* width: 100%; */
-    /* grid-template-columns: repeat(3,1fr);
-    grid-gap: 0px; */
-    /* place-items: center; */
-    /* padding: 15px 0px 0px 0px; */
 }
-/* .figur > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 .example-square {
     border: 1px red solid;
     height: 75px;
     width: 75px;;
     justify-content: center;
     align-items: center;
-    margin-left: 65px;;
+    margin-left: 80px;
     display: grid;
 }
 .abcd {
     font-size: x-small;
     justify-content: center;
     align-items: center;
-    letter-spacing: 65px;
-    padding-left: 65px;
+    letter-spacing: 75px;
+    padding-left: 75px;
     display: grid;
 }
 .bujur {
@@ -202,19 +189,13 @@ input {
 
 }
 #btn-home {
-    /* background-color: orange;
+    background-color: orange;
     color: white;
     font-weight: bold;
     border-radius: 6px;
-    border: 0px; */
-
-    background-image: url("/image/home.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
+    border: 0px;
     width: 50px;
-    height: 50px;
+    height: 30px;
     display: block;
     float: left;
 }

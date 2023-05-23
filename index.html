@@ -5,44 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Meldir">
-    <title>Katik - Kalkulator Matamatik</title>
-    <link rel="stylesheet" href="css/style.css"> 
 
-    <!-- 
-        Cara git:
-        1. git init
-        2. git clone alamat ip
-        3. git add.
-        4. git commit -m "text"
-        5. git push origin main
-     -->
+    <!-- judul untuk tab browser -->
+    <title>Katik - Kalkulator Matamatik</title>
+
+    <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body>
+    <!-- bagian judul/ nama web app hanya muncul di awal start app -->
     <span class="homepage" id="homepage">
         <span id="title" >Katik</span> 
         <span id="subtitle">Kalkulator Matematik</span>
     </span>
+
+    <!-- bagian header di isi tulisan welcome dan tombol pilihan menu diset hanya akan muncul di awal start app -->
     <header id="header">
         <span class="first">
-        <h3>Welcome to Katik</h3>
-        <p id="introduction">
-            Hai sobat, selamat datang di Katik &#128578;<br>
-            Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.
-        </p>
+            <h3>Welcome to Katik</h3>
+            <p id="introduction">
+                Hai sobat, selamat datang di Katik &#128578;<br>
+                Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.
+            </p>
         </span>
         <div class="btn-atas">
+
+            <!-- ini tombol untuk pilih menu menghitung persegi -->
             <span>
                 <button id="btn-choose1" onclick="pilihPersegi()">Persegi</button>
             </span>
+
+            <!-- ini tombol untuk pilih menu menghitung persegi panjang -->
             <span>
                 <button id="btn-choose2" onclick="pilihPersegipanjang()">Persegi Panjang</button>
             </span>
+
         </div>
     </header>
+
+    <!-- bagian main hanya muncul sesuai pilihan tombol di atas -->
     <main id="main">
         <div class="card">
-                <span class="title" id="luas-persegi">Luas Persegi</span>
-            
+
+            <!-- hanya muncul di menu perhitungan persegi -->
+            <span class="title" id="luas-persegi">Luas Persegi</span>            
             <div class="figure">
                 <span class="abcd">AB</span>
                 <span class="example-square">
@@ -68,7 +73,10 @@
                 <!-- <input id="sisi-luas2" name="sisi-luas2" type="text" placeholder="Nilai Sisi" required> -->
 
                 <div id="hasilAll">
-                    <p class="result-luas" id="rumus-luas">L = S x S</p>
+                    <p class="result-luas" id="rumus-luas">
+                        <h4>H A S I L :</h4>
+                        L = S x S
+                    </p>
                     <p class="result-luas" id="perhitungan-luas"></p>
                     <p class="result-luas2">L = <span id="output-luas"></span> x <span id="output-luas2"></span></p>
                     <p class="result-luas2"><span id="result-akhir"></span></p>
