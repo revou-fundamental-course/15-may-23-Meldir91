@@ -107,11 +107,83 @@
                         <button id="btn-hitung2" name="hitung-luas2" onclick="hitungLuas2()">Hitung</button> 
                     -->
                 </span>
+                <!-- <span class="btn-end">
+                    <button id="btn-home" name="home" onclick="homePage()">Home</button>
+                </span> -->
+                <span class="btn-end">
+                    <button id="btn-reset" name="reset-luas" onclick="resetLuas()">Reset</button>
+                </span>
+            </div>
+            </span>
+            </div>
+        </div>
+
+        <div class="card2">
+
+            <!-- hanya muncul di menu perhitungan persegi -->
+            <span class="title" id="luas-persegi">Keliling Persegi</span>            
+            <div class="figure">
+                <span class="abcd">AB</span>
+                <span class="example-square">
+                    <span id="output_keliling2"></span>
+                </span>
+                <span class="abcd">CD</span> 
+            </div> 
+            <span id="sisi1"></span>
+            <br>
+            <span class="bujur">Bujur Sangkar</span>
+            <br>        
+            <div class="operator" id="formula-description">
+                <form><fieldset>
+                <legend><h4>Rumus Keliling Persegi</h4></legend>
+                
+                    <p id="show-rumus"> K = 4 x S</p>
+
+                    Di mana:<br>
+                    K = Keliling<br>
+                    S = Sisi
+                </p>
+                </fieldset></form>
+            </div>
+            <hr>
+            <div class="operator">
+
+                <!-- hanya muncul pada menu perhitungan persegi -->
+                <h3>Hitung Keliling Persegi</h3>
+                <input id="sisi-keliling" name="sisi-keliling" type="text" placeholder="Nilai Sisi" required>
+                
+                <!--proses pengembangan persegi panjang:
+                    <input id="sisi-luas2" name="sisi-luas2" type="text" placeholder="Nilai Panjang" required> 
+                    
+                    <input id="sisi-luas3" name="sisi-luas2" type="text" placeholder="Nilai Lebar" required> 
+                -->
+
+                <div id="hasilAll1">
+                    <form><fieldset>
+
+                        <!-- hanya tampil pada menu perhitungan persegi -->
+                        <legend class="tampilan-hasil" id="hasil-persegi"><h4>H a s i l</h4></legend>
+                        <p class="result-keliling2" id="rumus-keliling">
+                            K = 4 x S
+                        </p>
+                        <p class="result-keliling" id="perhitungan-keliling"></p>
+                        <p class="result-keliling2">K = 4 x <span id="output-keliling2"></span></p>
+                        <p class="result-keliling2"><span id="result-akhir"></span></p><hr>
+                        <p class="result-keliling">K = <span id="output_keliling"></span> cm</p>
+                    </fieldset></form>
+                </div>
+                <span class="btn-hitung">
+                    <button id="btn-hitung" name="hitung-keliling" onclick="hitungKeliling()">Hitung</button>
+
+                    <!--proses pengembangan persegi panjang: 
+                        <button id="btn-hitung2" name="hitung-luas2" onclick="hitungLuas2()">Hitung</button> 
+                    -->
+                </span>
                 <span class="btn-end">
                     <button id="btn-home" name="home" onclick="homePage()">Home</button>
                 </span>
                 <span class="btn-end">
-                    <button id="btn-reset" name="reset-luas" onclick="resetLuas()">Reset</button>
+                    <button id="btn-reset" name="reset-luas" onclick="resetLuas1()">Reset</button>
                 </span>
             </div>
             </span>
