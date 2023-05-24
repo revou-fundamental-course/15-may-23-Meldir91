@@ -2,6 +2,10 @@ body {
     display: block;
     background-color: white;
 }
+
+/* 
+    mengatur posisi tulisan Katim Kalkulator Matematika: 
+*/
 .homepage {
     background-color: rgba(48, 115, 250, 0.648); 
     padding: 20px 20px;
@@ -10,11 +14,19 @@ body {
     text-align: center;
     display: block;
 }
+
+/* 
+    mengatur tulisan Katik: 
+*/
 #title {
     font-weight: bold;
     color: white; 
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+/* 
+    mengatur tulisan Kalkulator Matematika 
+*/
 #subtitle {
     color: rgb(128, 128, 128);
     direction:ltr;
@@ -26,6 +38,10 @@ header {
     padding: 0px 20px;
     display: block;    
 }
+
+/* 
+    mengatur tulisan welcome to katik yang ada pada header  dan tombol pilihan perhitungan persegi atau persegi panjang: 
+*/
 .first {
     background-color: black;
     padding-top: 20px;
@@ -86,6 +102,10 @@ h3 {
     border-width: 1px;
     border-color: rgba(48, 115, 250, 0.648);
 }
+
+/* 
+    mengatur tulisan header menu persegi: 
+*/
 .title {
     font-weight: bold;
     color: white;
@@ -95,6 +115,10 @@ h3 {
     justify-content: center;
     padding-top: 20px;
 }
+
+/* 
+    mengatur tampilan persegi/ bujur sangkar: 
+*/
 .example-square {
     border: 1px red solid;
     height: 75px;
@@ -104,6 +128,10 @@ h3 {
     margin-left: 80px;
     display: grid;
 }
+
+/* 
+    mengatur tulisan abcd pada ujung masing2 sisi bujur sangkar: 
+*/
 .abcd {
     font-size: x-small;
     justify-content: center;
@@ -112,19 +140,45 @@ h3 {
     padding-left: 75px;
     display: grid;
 }
+
+/* 
+    tampilan hasil luas pada bagian dalam bujur sangkar: 
+*/
 #output_luas1 {
     font-size: x-small;
 }
-.bujur {
+
+/* 
+    tampilan nilai sisi yang diinputkan: 
+*/
+#sisi {
     font-size: x-small;
     font-weight: bold;
     place-items: center;
     display: grid;
 }
+
+/* 
+    tampilan tulisan bujur sangkar: 
+*/
+.bujur {
+    font-size: small;
+    font-weight: bold;
+    place-items: center;
+    display: grid;
+}
+
+/* 
+    tampilan bagian penjelasan tentang rumus luas persegi: 
+*/
 .operator {
     padding: 0px 20px 10px 20px;
     margin-bottom: 30px;
 }
+
+/* 
+    tampilan bagian hitung luas persegi: 
+*/
 #luas-persegi {
     background-color: rgba(48, 115, 250, 0.648);
     text-align: center;
@@ -132,10 +186,15 @@ h3 {
     display: flex;
     justify-content: center;    
 }
+
+/* 
+    tampilan input: 
+*/
 input {
     width: 100%;
     box-sizing: border-box;
     padding: 5px;
+    outline: 2px rgba(48, 115, 250, 0.648) solid;
 }
 #sisi-luas {
     display: block;
@@ -143,10 +202,18 @@ input {
 #sisi-luas2 {
     display: none;
 }
+
+/* 
+    tampilan bagian hasil setelah perhitngan luas bujur sangkar: 
+*/
 #hasilAll {
     display: none;
     justify-content: left;
 }
+
+/* 
+    bagian tombol hitung: 
+*/
 #btn-hitung {
     background-color: rgba(48, 115, 250, 0.648); 
     color: white;
@@ -175,10 +242,18 @@ input {
     display: flex;
     min-height: 70px;
 }
+
+/* 
+    bagian tombol kembali ke menu awal: 
+*/
 .btn-end {
     justify-content: right;
     min-height: 50px;
 }
+
+/* 
+    bagian tombol reset: 
+*/
 #btn-reset {
     background-color: orange;
     color: white;
