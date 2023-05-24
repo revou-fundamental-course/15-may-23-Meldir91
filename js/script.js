@@ -1,3 +1,4 @@
+// mengatur bagian yang ditampilkan setelah tombol menu perhitungan dipilih:
 function pilihPersegi() {
     var pilih = document.getElementById("main");
     pilih.style.display = "block";
@@ -9,12 +10,13 @@ function pilihPersegi() {
     pilih.style.display = "none";
 }
 
+// mengatur tampilan tombol persegi panjang setelah dipilih:
 function pilihPersegipanjang() {
     var pesan = "Maaf, menu Persegi Panjang saat ini sedang dalam tahap pengembangan. Kami bekerja keras untuk memberikan pengalaman terbaik kepada Anda - Terima kasih."
     alert(pesan);
 }
 
-
+// mengatur setelah tombol hitung dipilih untuk melakukan perhitungan bujur sangkar setelah nilai sisi diinput:
 function hitungLuas() {
     var sisiLuas = document.getElementById("sisi-luas").value;
 
@@ -29,14 +31,19 @@ function hitungLuas() {
             document.getElementById("output-luas2").innerHTML = '<span>'+sisiLuas+'</span>';
             console.log(sisiLuas);
 
+            document.getElementById("sisi").innerHTML = '<span>'+'S= '+sisiLuas+'</span>';
+            console.log(sisiLuas);
+
             let a1 = parseInt(sisiLuas);
             let a2 = sisiLuas * sisiLuas;
             
-            document.getElementById("output_luas1").innerHTML = '<span>'+a2+'</span>'+' m&sup2;';
+            document.getElementById("output_luas1").innerHTML = '<span>'+'L= '+a2+'</span>'+' m&sup2;';
             console.log(a2);
 
             document.getElementById("output_luas").innerHTML = '<span>'+a2+'</span>';
             console.log(a2);
+
+            
 
 
             // Menampilkan hasil input niai persegi:
@@ -60,6 +67,7 @@ function hitungLuas() {
     
 }
 
+// mengatur agar tombol enter berfungsi juga sebagai fungsi hitungLuas() di atas:
 document.getElementById("sisi-luas").addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode === 13) {
@@ -92,6 +100,7 @@ document.getElementById("sisi-luas").addEventListener("keyup", function(event) {
 //     });
 // });
 
+// mengatur tombol reset untuk menghapus bagian input dan menyembunyian bagian hasil:
 function resetLuas() {
     document.getElementById("sisi-luas").value = "";
 
@@ -102,6 +111,7 @@ function resetLuas() {
             console.log(a2);
 }
 
+// bagian untuk mengatur kembali ke menu awal setelah tombol home dipilih:
 function homePage() {
     window.location.reload();
 }
