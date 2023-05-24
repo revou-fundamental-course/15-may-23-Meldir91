@@ -67,11 +67,53 @@ function hitungLuas() {
     
 }
 
+function hitungKeliling() {
+    var sisiKeliling = document.getElementById("sisi-keliling").value;
+
+    if (sisiKeliling.trim() === "" || sisiKeliling.trim() < "1") {
+        return;
+    } if (isNaN(sisiKeliling)) {
+        return;
+        } else {
+            document.getElementById("output-keliling2").innerHTML = '<span>'+sisiKeliling+'</span>';
+            console.log(sisiKeliling);
+
+            document.getElementById("sisi1").innerHTML = '<span>'+'S= '+sisiKeliling+'</span>';
+            console.log(sisiKeliling);
+
+            let b1 = parseInt(sisiKeliling);
+            let b2 = 4 * sisiKeliling;
+            
+            document.getElementById("output_keliling2").innerHTML = '<span>'+'K= '+b2+'</span>'+' cm';
+            console.log(b2);
+
+            document.getElementById("output_keliling").innerHTML = '<span>'+b2+'</span>';
+            console.log(b2);
+         
+            // Menampilkan hasil input niai persegi:
+            var elemen2 = document.getElementById("hasilAll1");
+            elemen2.style.display = "block";
+            var elemen3 = document.getElementById("btn-reset");
+            elemen3.style.display = "block";
+
+            return sisiKeliling;
+        }
+
+    
+}
+
 // mengatur agar tombol enter berfungsi juga sebagai fungsi hitungLuas() di atas:
 document.getElementById("sisi-luas").addEventListener("keyup", function(event) {
     event.preventDefault();
     if (event.keyCode === 13) {
         hitungLuas();
+    }
+});
+
+document.getElementById("sisi-keliling").addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        hitungKeliling();
     }
 });
 
@@ -109,6 +151,16 @@ function resetLuas() {
 
     document.getElementById("output_luas1").innerHTML = '';
             console.log(a2);
+}
+
+function resetLuas1() {
+    document.getElementById("sisi-keliling").value = "";
+
+    var elemen = document.getElementById("hasilAll1");
+    elemen.style.display = "none";
+
+    document.getElementById("output_keliling1").innerHTML = '';
+            console.log(b2);
 }
 
 // bagian untuk mengatur kembali ke menu awal setelah tombol home dipilih:
