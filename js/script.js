@@ -23,7 +23,7 @@ function hitungLuas() {
     } if (isNaN(sisiLuas)) {
         return;
         } else {
-            document.getElementById("output-luas").innerHTML = '<span>'+sisiLuas+'</span>';
+            document.getElementById("output-luas1").innerHTML = '<span>'+sisiLuas+'</span>';
             console.log(sisiLuas);
 
             document.getElementById("output-luas2").innerHTML = '<span>'+sisiLuas+'</span>';
@@ -32,7 +32,10 @@ function hitungLuas() {
             let a1 = parseInt(sisiLuas);
             let a2 = sisiLuas * sisiLuas;
             
-            document.getElementById("result").innerHTML = '<span>'+a2+'</span>';
+            document.getElementById("output_luas1").innerHTML = '<span>'+a2+'</span>'+' m&sup2;';
+            console.log(a2);
+
+            document.getElementById("output_luas").innerHTML = '<span>'+a2+'</span>';
             console.log(a2);
 
 
@@ -94,6 +97,9 @@ function resetLuas() {
 
     var elemen = document.getElementById("hasilAll");
     elemen.style.display = "none";
+
+    document.getElementById("output_luas1").innerHTML = '';
+            console.log(a2);
 }
 
 function homePage() {
