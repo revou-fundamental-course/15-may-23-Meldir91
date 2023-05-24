@@ -102,6 +102,14 @@ h3 {
     border-width: 1px;
     border-color: rgba(48, 115, 250, 0.648);
 }
+.card2 {
+    background-color: white;
+    padding: 0px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(48, 115, 250, 0.648);
+}
 
 /* 
     mengatur tulisan header menu persegi: 
@@ -147,11 +155,20 @@ h3 {
 #output_luas1 {
     font-size: x-small;
 }
+#output_keliling2 {
+    font-size: x-small;
+}
 
 /* 
     tampilan nilai sisi yang diinputkan: 
 */
 #sisi {
+    font-size: x-small;
+    font-weight: bold;
+    place-items: center;
+    display: grid;
+}
+#sisi1 {
     font-size: x-small;
     font-weight: bold;
     place-items: center;
@@ -199,6 +216,9 @@ input {
 #sisi-luas {
     display: block;
 }
+#sisi-keliling {
+    display: block;
+}
 #sisi-luas2 {
     display: none;
 }
@@ -207,6 +227,10 @@ input {
     tampilan bagian hasil setelah perhitngan luas bujur sangkar: 
 */
 #hasilAll {
+    display: none;
+    justify-content: left;
+}
+#hasilAll1 {
     display: none;
     justify-content: left;
 }
@@ -283,10 +307,21 @@ input {
 .result-luas2 {
     display: inline;
 }
+.result-keliling2 {
+    display: inline;
+}
 #output_luas {
     font-weight: bold;
 }
+#output_keliling {
+    font-weight: bold;
+}
 .result-luas {
+    margin : 0px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+    font-weight: bold;
+}
+.result-keliling {
     margin : 0px 0px 0px 0px;
     padding: 0px 0px 10px 0px;
     font-weight: bold;
