@@ -9,7 +9,9 @@
     <!-- judul untuk tab browser -->
     <title>Katik - Kalkulator Matamatik</title>
 
+    <!-- penulisan css diambil dari external -->
     <link rel="stylesheet" href="css/style.css"> 
+    
 </head>
 <body>
     <!-- bagian judul/ nama web app hanya muncul di awal start app -->
@@ -51,49 +53,64 @@
             <div class="figure">
                 <span class="abcd">AB</span>
                 <span class="example-square">
+
+                    <span id="output_luas1"></span>
+
+
                 </span>
                 <span class="abcd">CD</span> 
             </div> 
-            <span class="bujur">Bujur Sangkar</span>        
+            <span class="bujur">Bujur Sangkar</span>
+            <br>        
             <div class="operator" id="formula-description">
-                <p>
-                    Rumus Luas Persegi yaitu:<br>
+                <form><fieldset>
+                <legend><h4>Rumus Luas Persegi</h4></legend>
                     <p id="show-rumus"> L = S x S</p>
 
                     Di mana:<br>
                     L = Luas<br>
                     S = Sisi
                 </p>
+                </fieldset></form>
             </div>
             <hr>
             <div class="operator">
+
+                <!-- hanya muncul pada menu perhitungan persegi -->
                 <h3>Hitung Luas Persegi</h3>
                 <input id="sisi-luas" name="sisi-luas" type="text" placeholder="Nilai Sisi" required>
                 
-                <!-- proses pengembangan persegi panjang:
+                <!--proses pengembangan persegi panjang:
                     <input id="sisi-luas2" name="sisi-luas2" type="text" placeholder="Nilai Panjang" required> 
                     
                     <input id="sisi-luas3" name="sisi-luas2" type="text" placeholder="Nilai Lebar" required> 
                 -->
 
                 <div id="hasilAll">
-                    <p class="result-luas" id="rumus-luas">
-                        <h4>H A S I L :</h4>
-                        L = S x S
-                    </p>
-                    <p class="result-luas" id="perhitungan-luas"></p>
-                    <p class="result-luas2">L = <span id="output-luas"></span> x <span id="output-luas2"></span></p>
-                    <p class="result-luas2"><span id="result-akhir"></span></p>
-                    <p class="result-luas">L = <span id="result"></span> m&sup2;</p>
+                    <form><fieldset>
+
+                        <!-- hanya tampil pada menu perhitungan persegi -->
+                        <legend class="tampilan-hasil" id="hasil-persegi"><h4>H A S I L</h4></legend>
+                        <p class="result-luas2" id="rumus-luas">
+                            L = S x S
+                        </p>
+                        <p class="result-luas" id="perhitungan-luas"></p>
+                        <p class="result-luas2">L = <span id="output-luas1"></span> x <span id="output-luas2"></span></p>
+                        <p class="result-luas2"><span id="result-akhir"></span></p><hr>
+                        <p class="result-luas">L = <span id="output_luas"></span> m&sup2;</p>
+                    </fieldset></form>
                 </div>
                 <span class="btn-hitung">
                     <button id="btn-hitung" name="hitung-luas" onclick="hitungLuas()">Hitung</button>
-                    <!-- <button id="btn-hitung2" name="hitung-luas2" onclick="hitungLuas2()">Hitung</button> -->
+
+                    <!--proses pengembangan persegi panjang: 
+                        <button id="btn-hitung2" name="hitung-luas2" onclick="hitungLuas2()">Hitung</button> 
+                    -->
                 </span>
-                <span class="btn-reset">
+                <span class="btn-end">
                     <button id="btn-home" name="home" onclick="homePage()">Home</button>
                 </span>
-                <span class="btn-reset">
+                <span class="btn-end">
                     <button id="btn-reset" name="reset-luas" onclick="resetLuas()">Reset</button>
                 </span>
             </div>
@@ -102,6 +119,10 @@
         </div>
     </main>
     <footer></footer>
+
+        <!-- 
+            pemanggilan script javaScript external diletakan dibawah karena butuh load setelah komponen html di atas dibaca terlebih dahulu 
+        -->
         <script src="js/script.js"></script>
 </body>
 </html>
