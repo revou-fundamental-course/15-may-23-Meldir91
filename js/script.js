@@ -8,12 +8,15 @@ function pilihPersegi() {
 
     var pilih = document.getElementById("homepage");
     pilih.style.display = "none";
+
+    console.log(pilih);
 }
 
 // mengatur tampilan tombol persegi panjang setelah dipilih:
 function pilihPersegipanjang() {
     var pesan = "Maaf, menu Persegi Panjang saat ini sedang dalam tahap pengembangan. Kami bekerja keras untuk memberikan pengalaman terbaik kepada Anda - Terima kasih."
     alert(pesan);
+    console.log(pesan);
 }
 
 // mengatur setelah tombol hitung dipilih untuk melakukan perhitungan bujur sangkar setelah nilai sisi diinput:
@@ -37,7 +40,7 @@ function hitungLuas() {
             let a1 = parseInt(sisiLuas);
             let a2 = sisiLuas * sisiLuas;
             
-            document.getElementById("output_luas1").innerHTML = '<span>'+'L= '+a2+'</span>'+' m&sup2;';
+            document.getElementById("output_luas1").innerHTML = '<span>'+'L= '+a2+'</span>';
             console.log(a2);
 
             document.getElementById("output_luas").innerHTML = '<span>'+a2+'</span>';
@@ -84,7 +87,7 @@ function hitungKeliling() {
             let b1 = parseInt(sisiKeliling);
             let b2 = 4 * sisiKeliling;
             
-            document.getElementById("output_keliling2").innerHTML = '<span>'+'K= '+b2+'</span>'+' cm';
+            document.getElementById("output_keliling2").innerHTML = '<span>'+'K= '+b2+'</span>';
             console.log(b2);
 
             document.getElementById("output_keliling").innerHTML = '<span>'+b2+'</span>';
@@ -150,16 +153,19 @@ function resetLuas() {
     elemen.style.display = "none";
 
     document.getElementById("output_luas1").innerHTML = '';
+    document.getElementById("sisi").innerHTML = '';
             console.log(a2);
 }
 
-function resetLuas1() {
+function resetKeliling() {
     document.getElementById("sisi-keliling").value = "";
 
-    var elemen = document.getElementById("hasilAll1");
-    elemen.style.display = "none";
+    var elemen1 = document.getElementById("hasilAll1");
+    elemen1.style.display = "none";
 
-    document.getElementById("output_keliling1").innerHTML = '';
+    document.getElementById("output_keliling2").innerHTML = '';
+
+    document.getElementById("sisi1").innerHTML = '';
             console.log(b2);
 }
 
