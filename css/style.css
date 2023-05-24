@@ -21,15 +21,15 @@ body {
     text-indent: 8px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-.first {
-    background-color: black;
-    padding-top: 20px;
-    margin: 20px;
-}
 header {
     background-color: white;
     padding: 0px 20px;
     display: block;    
+}
+.first {
+    background-color: black;
+    padding-top: 20px;
+    margin: 20px;
 }
 #introduction{
     text-align: center;
@@ -112,6 +112,9 @@ h3 {
     padding-left: 75px;
     display: grid;
 }
+#output_luas1 {
+    font-size: x-small;
+}
 .bujur {
     font-size: x-small;
     font-weight: bold;
@@ -134,14 +137,13 @@ input {
     box-sizing: border-box;
     padding: 5px;
 }
-#sisiluas {
+#sisi-luas {
     display: block;
 }
 #sisi-luas2 {
     display: none;
 }
 #hasilAll {
-    background-color: rgb(154, 154, 154);
     display: none;
     justify-content: left;
 }
@@ -173,7 +175,7 @@ input {
     display: flex;
     min-height: 70px;
 }
-.btn-reset {
+.btn-end {
     justify-content: right;
     min-height: 50px;
 }
@@ -187,7 +189,6 @@ input {
     border: 0px;
     display: block;
     float: right;
-
 }
 #btn-home {
     background-color: orange;
@@ -207,6 +208,14 @@ input {
 .result-luas2 {
     display: inline;
 }
-#result {
+#output_luas {
     font-weight: bold;
+}
+.result-luas {
+    margin : 0px 0px 0px 0px;
+    padding: 0px 0px 10px 0px;
+    font-weight: bold;
+}
+h4 {
+    font-style: italic;
 }
