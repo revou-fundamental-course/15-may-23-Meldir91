@@ -1,0 +1,212 @@
+body {
+    display: block;
+    background-color: white;
+}
+.homepage {
+    background-color: rgba(48, 115, 250, 0.648); 
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    display: block;
+}
+#title {
+    font-weight: bold;
+    color: white; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#subtitle {
+    color: rgb(128, 128, 128);
+    direction:ltr;
+    text-indent: 8px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.first {
+    background-color: black;
+    padding-top: 20px;
+    margin: 20px;
+}
+header {
+    background-color: white;
+    padding: 0px 20px;
+    display: block;    
+}
+#introduction{
+    text-align: center;
+    font-size: small;
+    padding: 0px;
+    margin: 0px;
+}
+h3 {
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    margin: 0px 0px 5px 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#btn-choose1 {
+    color: rgba(48, 115, 250, 0.648);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 1px;
+    width: 100%;
+    /* background-color:rgba(48, 115, 250, 0.648); */
+    border: 0px;
+    border-radius: 2px   
+}
+#btn-choose1:hover {
+   background-color:rgba(48, 115, 250, 0.648);
+   color: white;
+}
+#btn-choose2 {
+    color: rgba(48, 115, 250, 0.648);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: 1px;
+    margin-bottom: 20px;
+    width: 100%;
+    /* background-color:rgba(48, 115, 250, 0.648); */
+    border: 0px;
+    border-radius: 2px  
+}
+#btn-choose2:hover {
+    background-color:rgba(48, 115, 250, 0.648);
+    color: white;
+ }
+ main {
+    padding: 0px 20px;
+    display: none;
+}
+.card {
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(48, 115, 250, 0.648);
+}
+.title {
+    font-weight: bold;
+    color: white;
+}
+.figure {
+    display: grid;
+    justify-content: center;
+    padding-top: 20px;
+}
+.example-square {
+    border: 1px red solid;
+    height: 75px;
+    width: 75px;;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px;
+    display: grid;
+}
+.abcd {
+    font-size: x-small;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 75px;
+    padding-left: 75px;
+    display: grid;
+}
+.bujur {
+    font-size: x-small;
+    font-weight: bold;
+    place-items: center;
+    display: grid;
+}
+.operator {
+    padding: 0px 20px 10px 20px;
+    margin-bottom: 30px;
+}
+#luas-persegi {
+    background-color: rgba(48, 115, 250, 0.648);
+    text-align: center;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;    
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+#sisiluas {
+    display: block;
+}
+#sisi-luas2 {
+    display: none;
+}
+#hasilAll {
+    background-color: rgb(154, 154, 154);
+    display: none;
+    justify-content: left;
+}
+#btn-hitung {
+    background-color: rgba(48, 115, 250, 0.648); 
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    width: 75px;
+    height: 35px;
+    border-radius: 6px;
+    border: 0px;
+    display: block;
+}
+#btn-hitung2 {
+    background-color: rgba(48, 115, 250, 0.648); 
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    width: 75px;
+    height: 35px;
+    border-radius: 6px;
+    border: 0px;
+    display: none;
+}
+.btn-hitung {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 70px;
+}
+.btn-reset {
+    justify-content: right;
+    min-height: 50px;
+}
+#btn-reset {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    width: 50px;
+    height: 30px;
+    border-radius: 6px;
+    border: 0px;
+    display: block;
+    float: right;
+
+}
+#btn-home {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    border: 0px;
+    width: 50px;
+    height: 30px;
+    display: block;
+    float: left;
+}
+#show-rumus {
+    text-align: center;
+    font-weight: bold;
+}
+.result-luas2 {
+    display: inline;
+}
+#result {
+    font-weight: bold;
+}
